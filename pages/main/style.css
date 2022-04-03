@@ -3,6 +3,7 @@ html {
 }
 body {
     margin: 0px;
+    background-color: rgb(212, 209, 209);
 }
 * {
     box-sizing: border-box;
@@ -99,7 +100,7 @@ nav {
 }
 .hero-text {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
+    font-size: 15.6px;
     font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
@@ -109,7 +110,7 @@ nav {
     font-size: 17px;
     font-weight: 400;
     line-height: 22px;
-    color: black;
+    color: #292929;
     border-width: 3px;
     border-radius: 30px;
     border-color: #F1CDB3;
@@ -127,3 +128,61 @@ nav {
     margin-top: 60px;
     margin-left: 42px;
 }
+.about {
+    display: flex;
+    background-color: #FFFFFF;
+    max-width: 1280px;
+    gap: 120px;
+}
+.about-icon {
+    background-image: url(/assets/icons/about-pets.svg);
+    width: 300px;
+    height: 408px;
+    margin-left: 215px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.about-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    height: 380px;
+    margin-top: 94px;
+    gap: 25px;
+}
+.about-title {
+    font-family: 'Alike Angular', serif;
+    font-weight: 400;
+    color: #545454;
+    font-size: 35px;
+}
+.about-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4C4C4C;
+}
+.friends-container {
+    font-family: 'Alike Angular', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1280px;
+    background-color: #FFFFFF;
+}
+.friends-title {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    max-width: 400px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #545454;
+    text-align: center;
+}
+.friends-intro {
+    display: flex;
+    gap: 90px;
+}
+

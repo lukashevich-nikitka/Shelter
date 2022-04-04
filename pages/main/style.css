@@ -111,15 +111,15 @@ nav {
     font-weight: 400;
     line-height: 22px;
     color: #292929;
-    border-width: 3px;
+    border-width: 0px;
     border-radius: 30px;
-    border-color: #F1CDB3;
+    background-color: #F1CDB3;
     width: 207px;
     height: 52px;
     cursor: pointer;
 }
 .hero-button:hover {
-    background-color: #F1CDB3;
+    background-color: #FDDCC4;
 }
 .puppy {
     background-image: url(/assets/icons/puppybg.svg);
@@ -163,12 +163,14 @@ nav {
     color: #4C4C4C;
 }
 .friends-container {
+    position: relative;
     font-family: 'Alike Angular', serif;
     display: flex;
     flex-direction: column;
     gap: 60px;
     max-width: 1280px;
-    background-color: #FFFFFF;
+    background-color: #F6F6F6;
+    align-items: center;
 }
 .friends-title {
     font-size: 35px;
@@ -176,7 +178,6 @@ nav {
     line-height: 45.5px;
     max-width: 400px;
     height: 90px;
-    margin: 0 auto;
     margin-top: 80px;
     color: #545454;
     text-align: center;
@@ -184,5 +185,102 @@ nav {
 .friends-intro {
     display: flex;
     gap: 90px;
+}
+.first {
+    background-image: url(/assets/icons/pets-katrine.svg);
+    width: 270px;
+    height: 270px;
+}
+.second {
+    background-image: url(/assets/icons/pets-jennifer.svg);
+    width: 270px;
+    height: 270px;
+}
+.third {
+    background-image: url(/assets/icons/pets-woody.svg);
+    width: 270px;
+    height: 270px;
+}
+.friends-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 270px;
+    height: 435px;
+    align-items: center;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+.friends-card-text {
+    font-size: 20px;
+    line-height: 22.72px;
+    text-align: center;
+    color: #545454;
+}
+.friends-card-button {
+    font-family: 'Alike Angular', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+    color: #292929;
+    width: 187px;
+    height: 52px;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: #FDDCC4;
+    cursor: pointer;
+}
+.friends-card-button:hover {
+    background-color: #FDDCC4;
+}
+.friends-button {
+    font-family: 'Alike Angular', serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #292929;
+    border-width: 0px;
+    border-radius: 30px;
+    background-color: #F1CDB3;
+    width: 261px;
+    height: 52px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.friends-button:hover {
+    background-color: #FDDCC4;
+}
+.left-arrow {
+    background-image: url(/assets/icons/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position :absolute;
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: 422px;
+    left: 40px;
+    cursor: pointer;
+}
+.left-arrow:hover {
+    background-color: #FDDCC4;
+    border: none;
+}
+.right-arrow {
+    background-image: url(/assets/icons/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position :absolute;
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: 422px;
+    right: 40px;
+    cursor: pointer;
+}
+.right-arrow:hover {
+    background-color: #FDDCC4;
+    border: none;
 }
 

@@ -105,17 +105,17 @@ nav {
     gap: 90px;
 }
 .first {
-    background-image: url(/assets/icons/pets-katrine.svg);
+    background-image: url(/shelter/assets/icons/pets-katrine.svg);
     width: 270px;
     height: 270px;
 }
 .second {
-    background-image: url(/assets/icons/pets-jennifer.svg);
+    background-image: url(/shelter/assets/icons/pets-jennifer.svg);
     width: 270px;
     height: 270px;
 }
 .third {
-    background-image: url(/assets/icons/pets-woody.svg);
+    background-image: url(/shelter/assets/icons/pets-woody.svg);
     width: 270px;
     height: 270px;
 }
@@ -169,7 +169,7 @@ nav {
     background-color: #FDDCC4;
 }
 .left-arrow {
-    background-image: url(/assets/icons/left-arrow.svg);
+    background-image: url(/shelter/assets/icons/left-arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     position :absolute;
@@ -186,7 +186,7 @@ nav {
     border: none;
 }
 .right-arrow {
-    background-image: url(/assets/icons/right-arrow.svg);
+    background-image: url(/shelter/assets/icons/right-arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     position :absolute;
@@ -203,7 +203,7 @@ nav {
     border: none;
 }
 .footer-container {
-    background-image: url(/assets/images/footer-background.jpg);
+    background-image: url(/shelter/assets/images/footer-background.jpg);
     display: flex;
     gap: 160px;
     align-items: center;
@@ -249,12 +249,12 @@ nav {
     
 }
 .adr-image {
-    background-image: url(/assets/icons/footer-icon-marker.svg);
+    background-image: url(/shelter/assets/icons/footer-icon-marker.svg);
     width: 22px;
     height: 32px;
 }
 .footer-dog-image {
-    background-image: url(/assets/icons/footer-puppy.svg);
+    background-image: url(/shelter/assets/icons/footer-puppy.svg);
     width: 300px;
     height: 310px;
     align-items: none;

@@ -67,6 +67,10 @@ nav {
 }
 .nav-link {
     cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .nav-link:hover {
     text-decoration: underline;
@@ -445,6 +449,8 @@ nav {
     display: flex;
     gap: 160px;
     align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .footer-first-column {
     display: flex;
@@ -495,4 +501,7 @@ nav {
     height: 310px;
     align-items: none;
     align-self: flex-end;
+}
+.link-scroll {
+    position: absolute;
 }

@@ -19,8 +19,8 @@
             <ul class="nav-list">
                 <li><a id="active-nav-link">About the shelter</a></li>
                 <li><a class="nav-link">Our Pets</a></li>
-                <li><a class="nav-link">Help the shelter</a></li>
-                <li><a class="nav-link">Contacts</a></li>
+                <li><a class="nav-link" href="#help">Help the shelter</a></li>
+                <li><a class="nav-link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
                 <div class="hero">
                     <div class="hero-title">Not only people need a house</div>
                     <div class="hero-text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</div>
-                    <div><button class="hero-button">Make a friend</button></div>
+                    <div><a href="#friends"><button class="hero-button">Make a friend</button></a></div>
                 </div>
                 <div class="puppy"></div>
             </section>
@@ -46,6 +46,7 @@
                 </div>
             </section>
             <section class="friends-container">
+                <a name="friends" class="link-scroll"></a>
                 <div class="friends-title">
                     <div>Our friends who</div>
                     <div>are looking for a house</div>
@@ -72,6 +73,7 @@
                 <div><button class="friends-button">Get to know the rest</button></div>
             </section>
             <section class="help-container">
+                <a class="link-scroll" name="help"></a>
                 <div class="friends-title">
                     <div>How you can help</div>
                     <div>our shelter</div>
@@ -133,37 +135,36 @@
                     </div>
                     <div class="big-donation-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
                 </div>
-            </section>
-            <section class="footer-container">
-                <div class="footer-first-column">
-                    <div class="footer-title">For questions and suggestions</div>
-                    <div class="contacts-area">
-                        <div><a href="mailto:email@shelter.com" class="contacts-field"><img src="/assets/icons/footer-icon-email.svg" alt="email"></a></div>
-                        <div><a href="mailto:email@shelter.com" class="contacts-field">email@shelter.com</a></div>
-                    </div>
-                    <div class="contacts-area">
-                        <div><a href="tel:+136745677554" class="contacts-field"><img src="/assets/icons/footer-icon-phone.svg" alt="phone"></a></div>
-                        <div><a href="tel:+136745677554" class="contacts-field">+13 674 567 75 54</a></div>
-                    </div>
-                </div>
-                <div class="footer-second-column">
-                    <div class="footer-title">We are waiting for your visit</div>
-                    <div class="contacts-area">
-                        <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field"><img src="/assets/icons/footer-icon-marker.svg" alt="marker"></a></div>
-                        <div>
-                            <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field">1 Central Street, Boston</a></div>
-                            <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field">(entrance from the store)</a></div>
-                        </div>
-                    </div>
-                    <div class="contacts-area">
-                        <div><a href="https://goo.gl/maps/9Wv9wR9RQf8KV68b9" target="_blank" class="contacts-field"><img src="/assets/icons/footer-icon-marker.svg" alt="marker"></a></div>
-                        <div><a href="https://goo.gl/maps/9Wv9wR9RQf8KV68b9" target="_blank" class="contacts-field">18 South Park, London</a></div>
-                    </div>
-                </div>
-                <div class="footer-dog-image"></div>
-            </section>
+            </section>     
         </div>
     </main>
-    <footer class="footer-container"></footer>
+    <footer class="footer-container">
+        <div class="footer-first-column">
+        <div class="footer-title">For questions and suggestions</div>
+        <div class="contacts-area">
+            <div><a href="mailto:email@shelter.com" class="contacts-field"><img src="/assets/icons/footer-icon-email.svg" alt="email"></a></div>
+            <div><a href="mailto:email@shelter.com" class="contacts-field">email@shelter.com</a></div>
+        </div>
+        <div class="contacts-area">
+            <div><a href="tel:+136745677554" class="contacts-field"><img src="/assets/icons/footer-icon-phone.svg" alt="phone"></a></div>
+            <div><a href="tel:+136745677554" class="contacts-field">+13 674 567 75 54</a></div>
+        </div>
+    </div>
+    <div class="footer-second-column">
+        <div class="footer-title">We are waiting for your visit</div>
+        <div class="contacts-area">
+            <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field"><img src="/assets/icons/footer-icon-marker.svg" alt="marker"></a></div>
+            <div>
+                <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field">1 Central Street, Boston</a></div>
+                <div><a href="https://goo.gl/maps/phCUPHSS8iJp37ZTA" target="_blank" class="contacts-field">(entrance from the store)</a></div>
+            </div>
+        </div>
+        <div class="contacts-area">
+            <div><a href="https://goo.gl/maps/9Wv9wR9RQf8KV68b9" target="_blank" class="contacts-field"><img src="/assets/icons/footer-icon-marker.svg" alt="marker"></a></div>
+            <div><a href="https://goo.gl/maps/9Wv9wR9RQf8KV68b9" target="_blank" class="contacts-field">18 South Park, London</a></div>
+        </div>
+    </div>
+    <div class="footer-dog-image"><a name="contacts"></a></div>
+</footer>
 </body>
 </html>

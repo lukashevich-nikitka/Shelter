@@ -440,3 +440,59 @@ nav {
     line-height: 18px;
     color: #B2B2B2;
 }
+.footer-container {
+    background-image: url(/assets/images/footer-background.jpg);
+    display: flex;
+    gap: 160px;
+    align-items: center;
+}
+.footer-first-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 56px;
+    margin-left: 40px;
+    width: 278px;
+    height: 234px;
+    margin-bottom: 60px;
+}
+.footer-second-column {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: 302px;
+    height: 234px;
+}
+.footer-title {
+    font-family: 'Alike Angular', serif;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 45.5px;
+    color:#FFFFFF;
+}
+.contacts-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.contacts-field {
+    font-family: 'Alike Angular', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-decoration: none;
+    color: #F1CDB3;
+    
+}
+.adr-image {
+    background-image: url(/assets/icons/footer-icon-marker.svg);
+    width: 22px;
+    height: 32px;
+}
+.footer-dog-image {
+    background-image: url(/assets/icons/footer-puppy.svg);
+    width: 300px;
+    height: 310px;
+    align-items: none;
+    align-self: flex-end;
+}

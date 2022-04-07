@@ -81,11 +81,10 @@ nav {
     text-underline-offset: 3px;
 }
 .friends-container {
-    position: relative;
     font-family: 'Alike Angular', serif;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 45px;
     max-width: 1280px;
     background-color: #F6F6F6;
     align-items: center;
@@ -102,20 +101,11 @@ nav {
 }
 .friends-intro {
     display: flex;
-    gap: 90px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 40px;
 }
-.first {
-    background-image: url(/shelter/assets/icons/pets-katrine.svg);
-    width: 270px;
-    height: 270px;
-}
-.second {
-    background-image: url(/shelter/assets/icons/pets-jennifer.svg);
-    width: 270px;
-    height: 270px;
-}
-.third {
-    background-image: url(/shelter/assets/icons/pets-woody.svg);
+.friends-card-images {
     width: 270px;
     height: 270px;
 }
@@ -128,6 +118,10 @@ nav {
     align-items: center;
     background-color: #FAFAFA;
     cursor: pointer;
+}
+.friends-card:hover .friends-card-button {
+    background-color: #F1CDB3;
+    border-width: 0px;
 }
 .friends-card-text {
     font-size: 20px;
@@ -152,58 +146,53 @@ nav {
     background-color: #FDDCC4;
     border: none;
 }
-.friends-button {
+.friends-arrows {
     font-family: 'Alike Angular', serif;
     font-weight: 400;
-    font-size: 17px;
-    color: #292929;
-    border-width: 0px;
-    border-radius: 30px;
-    background-color: #F1CDB3;
-    width: 261px;
-    height: 52px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
     cursor: pointer;
     margin-bottom: 100px;
 }
-.friends-button:hover {
-    background-color: #FDDCC4;
+.arrow-button-disabled {
+    border: solid #CDCDCD;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    color: #CDCDCD;
+    letter-spacing: 2px;
 }
-.left-arrow {
-    background-image: url(/shelter/assets/icons/left-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position :absolute;
+.arrow-button-active {
+    background-color: #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    color: #292929;
+    cursor: pointer;
+}
+.arrow-button {
     border: solid #F1CDB3;
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    top: 422px;
-    left: 40px;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: #292929;
     cursor: pointer;
 }
-.left-arrow:hover {
-    background-color: #FDDCC4;
-    border: none;
-}
-.right-arrow {
-    background-image: url(/shelter/assets/icons/right-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position :absolute;
-    border: solid #F1CDB3;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    top: 422px;
-    right: 40px;
-    cursor: pointer;
-}
-.right-arrow:hover {
-    background-color: #FDDCC4;
-    border: none;
+.arrow-button:hover {
+    background-color: #F1CDB3;
 }
 .footer-container {
-    background-image: url(/shelter/assets/images/footer-background.jpg);
+    background-image: url(../../assets/images/footer-background.jpg);
     display: flex;
     gap: 160px;
     align-items: center;
@@ -249,12 +238,12 @@ nav {
     
 }
 .adr-image {
-    background-image: url(/shelter/assets/icons/footer-icon-marker.svg);
+    background-image: url(../../assets/icons/footer-icon-marker.svg);
     width: 22px;
     height: 32px;
 }
 .footer-dog-image {
-    background-image: url(/shelter/assets/icons/footer-puppy.svg);
+    background-image: url(../../assets/icons/footer-puppy.svg);
     width: 300px;
     height: 310px;
     align-items: none;

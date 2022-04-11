@@ -11,9 +11,10 @@ body {
 .header-container {
     background-color: #FFFFFF;
     max-width: 1280px;
-    margin: 0 auto;
     display: flex;
-    height: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
 }
 .container {
     max-width: 1280px;
@@ -118,6 +119,9 @@ nav {
     align-items: center;
     background-color: #FAFAFA;
     cursor: pointer;
+}
+.friends-card:hover {
+    background-color: #FFFFFF;
 }
 .friends-card:hover .friends-card-button {
     background-color: #F1CDB3;

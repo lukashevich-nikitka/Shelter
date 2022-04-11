@@ -204,6 +204,9 @@ nav {
     background-color: #FAFAFA;
     cursor: pointer;
 }
+.friends-card:hover {
+    background-color: #FFFFFF;
+}
 .friends-card:hover .friends-card-button {
     background-color: #F1CDB3;
     border-width: 0px;

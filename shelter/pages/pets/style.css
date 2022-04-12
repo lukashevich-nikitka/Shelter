@@ -239,7 +239,6 @@ nav {
     line-height: 23px;
     text-decoration: none;
     color: #F1CDB3;
-    
 }
 .adr-image {
     background-image: url(../../assets/icons/footer-icon-marker.svg);
@@ -255,4 +254,44 @@ nav {
 }
 .link-scroll {
     position: absolute;
+}
+@media (max-width: 768px) {
+    .friends-container {
+        gap: 30px;
+    }
+    .friends-intro {
+        row-gap: 30px;
+        column-gap: 40px;
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .friends-card:nth-child(7) {
+        display: none;
+    }
+    .friends-card:nth-child(8) {
+        display: none;
+    }
+    .friends-arrows {
+        margin-bottom: 76px;
+        margin-top: 10px;
+    }
+    .footer-container {
+        background-image: url(../../assets/images/Footer-bg-768px.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        column-gap: 65px;
+        justify-content: center;
+    }
+    .footer-first-column {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .footer-second-column {
+        margin-top: 30px;
+    }
+    .footer-dog-image {
+        background-position: center;
+    }
 }

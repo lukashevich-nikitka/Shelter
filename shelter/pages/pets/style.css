@@ -169,6 +169,7 @@ nav {
     padding-top: 10px;
     color: #CDCDCD;
     letter-spacing: 2px;
+    cursor: none;
 }
 .arrow-button-active {
     background-color: #F1CDB3;
@@ -198,6 +199,7 @@ nav {
 .footer-container {
     background-image: url(../../assets/images/footer-background.jpg);
     display: flex;
+    flex-wrap: wrap;
     gap: 160px;
     align-items: center;
     max-width: 1280px;
@@ -293,5 +295,94 @@ nav {
     }
     .footer-dog-image {
         background-position: center;
+    }
+}
+@media (max-width: 320px) {
+    .nav-list {
+        display: none;
+    }
+    .b1, .b2, .b3 {
+        width: 40px;
+        height: 3px;
+        background-color: #000000;
+        margin: 10px 0;
+        transition: 0.3s;
+        border-radius: 10px;
+        display: block;
+    }
+    .change .b1 {
+        transform: rotate(-90deg) translate(-10px, 23px);
+    }
+    .change .b3 {
+        transform: rotate(90deg) translate(-16px, 3px);
+    }
+    .change .b2 {
+        transform: rotate(90deg) translate(-3px, -10px);
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .burger {
+        padding-top: 41px;
+        padding-right: 53px;
+    }
+    .friends-container {
+        gap: 42px;
+    }
+    .friends-title {
+        font-size: 25px;
+        line-height: 32.5px;
+        max-width: 300px;
+        height: 64px;
+        margin-top: 42px;
+        text-align: center;
+    }
+    .friends-intro {
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .friends-card:nth-child(n + 4) {
+        display: none;
+    }
+    .friends-arrows {
+        gap: 10px;
+        margin-bottom: 42px;
+    }
+    .footer-container {
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+    .footer-first-column {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+        margin-left: 0px;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 0px;
+    }
+    .footer-second-column {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 0px;
+    }
+    .footer-title {
+        font-size: 25px;
+        line-height: 32.5px;
+        text-align: center;
+        width: 265px;
+    }
+    .contacts-area {
+        justify-content: center;
+    }
+    .footer-dog-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 260px;
+        height: 269px;
     }
 }

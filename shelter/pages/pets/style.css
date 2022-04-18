@@ -20,8 +20,19 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+.area-under-menu {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.area-under-menu-active {
+    position: fixed;
+    z-index: 98;
+    display: block;
+    background-color: rgba(41, 41, 41, 0.6);
+}
 .logo {
-    z-index: 1;
+    z-index: 100;
     margin-left: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -49,6 +60,7 @@ a {
     text-decoration: none;
 }
 .close-burger-menu {
+    z-index: 99;
     display: none;
 }
 nav {
@@ -204,6 +216,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 160px;
+    justify-content: center;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto;
@@ -256,6 +269,7 @@ nav {
     height: 310px;
     align-items: none;
     align-self: flex-end;
+    margin-right: 40px;
 }
 .link-scroll {
     position: absolute;
@@ -281,7 +295,8 @@ nav {
         margin-top: 10px;
     }
     .footer-container {
-        background-image: url(../../assets/images/Footer-bg-768px.jpg);
+        background: url(../../assets/images/transparent-bg.png),
+        radial-gradient(86% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
         display: flex;
         flex-wrap: wrap;
         row-gap: 60px;
@@ -298,6 +313,7 @@ nav {
     }
     .footer-dog-image {
         background-position: center;
+        margin: 0px;
     }
 }
 @media (max-width: 320px) {
@@ -387,7 +403,7 @@ nav {
         margin-left: 10px;
     }
     .burger {
-        z-index: 1;
+        z-index: 100;
         padding-top: 41px;
         padding-right: 53px;
     }
@@ -428,7 +444,6 @@ nav {
         gap: 40px;
         align-items: center;
         list-style: none;
-        z-index: 0;
     }
     .burger-nav-link {
         text-decoration: none;

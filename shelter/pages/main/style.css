@@ -108,6 +108,7 @@ nav {
     background-repeat:unset;
     max-width: 1280px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .hero {
@@ -116,7 +117,6 @@ nav {
     flex-direction: column;
     gap: 42px;
     margin-top: 223px;
-    margin-left: 40px;
     max-width: 460px;
 }
 .hero-title {
@@ -151,13 +151,14 @@ nav {
     background-color: #FDDCC4;
 }
 .puppy {
-    max-width: 100%;
     display: block;
     margin-top: 4.6875%;
     margin-left: 3.28125%;
 }
 .about {
     display: flex;
+    justify-content: center;
+    height: 100%;
     flex-wrap: wrap;
     background-color: #FFFFFF;
     max-width: 1280px;
@@ -167,7 +168,6 @@ nav {
     background-image: url(../../assets/icons/about-pets.svg);
     width: 300px;
     height: 408px;
-    margin-left: 215px;
     margin-bottom: 100px;
     margin-top: 80px;
 }
@@ -176,7 +176,7 @@ nav {
     flex-direction: column;
     max-width: 430px;
     height: 380px;
-    margin-top: 94px;
+    align-self: center;
     gap: 25px;
 }
 .about-title {
@@ -188,7 +188,7 @@ nav {
 .about-text {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 23px;
     color: #4C4C4C;
 }
 .friends-container {
@@ -215,6 +215,7 @@ nav {
 .friends-intro {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 90px;
 }
 .friends-card-images {
@@ -368,30 +369,15 @@ nav {
 }
 .help-images {
     display: flex;
+    justify-content: center;
+    max-width: 1000px;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 55px;
-    align-items: center;
+    column-gap: 120px;
+    row-gap: 55px;
     margin-bottom: 100px;
 }
 .help-container-with-cards-768px {
     display: none;
-}
-.first-part {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: 113px;
-    gap: 120px;
-    align-items: center;
-}
-.second-part {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: 113px;
-    gap: 120px;
-    align-items: center;
 }
 .help-cards {
     font-family: 'Alike Angular', serif;
@@ -412,9 +398,6 @@ nav {
     background-color: #F6F6F6;
 }
 .addition-dog-image {
-    background-image: url(../../assets/icons/donation-dog.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 505px;
     height: 261px;
     margin-top: 91px;
@@ -424,7 +407,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 380px;
+    max-width: 380px;
     height: 282px;
     margin-top: 80px;
     margin-bottom: 100px;
@@ -445,7 +428,7 @@ nav {
 }
 .donation-card-area {
     display: flex;
-    width: 349px;
+    max-width: 349px;
     background-color: #F1CDB3;
     border-radius: 10px;
     gap: 15px;
@@ -559,21 +542,23 @@ nav {
         background-position: center -90.125px;
         background-repeat: no-repeat;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
     }
     .puppy {
+        width: 100%;
+        height: auto;
         margin-top: 13.02%;
-        margin-left: 22.05%;
         max-width: 567px;
         height: auto;
     }
     .hero {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 42px;
         margin-top: 60px;
-        margin-left: 0px;
         width: fit-content;
+        align-self: center;
         align-items: center;
     }
     .hero-title {
@@ -612,18 +597,13 @@ nav {
     .help-images {
         display: none;
     }
-    .first-part {
-        display: none;
-    }
-    .second-part {
-        display: none;
-    }
     .help-container-with-cards-768px {
         display: flex;
         flex-wrap: wrap;
         max-width: 630px;
-        height: 449px;
+        height: 100%;
         row-gap: 60px;
+        justify-content: center;
         column-gap: 55px;
         margin-bottom: 100px;
         align-items: center;
@@ -638,10 +618,13 @@ nav {
         gap: 60px;
     }
     .addition-dog-image {
+        width: 100%;
+        height: auto;
         margin-top: 0px;
         margin-bottom: 100px;
     }
     .donation-zone {
+        justify-content: center;
         margin-bottom: 0px;
     }
     .footer-container {
@@ -676,6 +659,7 @@ nav {
     .hero {
         max-width: 320px;
         margin-top: 60px;
+        align-items: center;
     }
     .hero-title {
         font-size: 25px;
@@ -861,7 +845,7 @@ nav {
         line-height: 24px;
     }
     .donation-card-area {
-        width: 281px;
+        max-width: 281px;
         gap: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -917,7 +901,7 @@ nav {
         height: 269px;
     }
 }
-@media (max-width: 779px) {
+@media (max-width: 767px) {
     .nav-list {
         display: none;
     }

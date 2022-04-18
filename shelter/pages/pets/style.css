@@ -48,6 +48,9 @@ h1 {
 a {
     text-decoration: none;
 }
+.close-burger-menu {
+    display: none;
+}
 nav {
     margin-left: auto;
     margin-top: 46px;
@@ -157,7 +160,6 @@ nav {
     font-size: 20px;
     display: flex;
     gap: 20px;
-    cursor: pointer;
     margin-bottom: 100px;
 }
 .arrow-button-disabled {
@@ -170,7 +172,7 @@ nav {
     padding-top: 10px;
     color: #CDCDCD;
     letter-spacing: 2px;
-    cursor: none;
+    cursor: default;
 }
 .arrow-button-active {
     background-color: #F1CDB3;
@@ -359,7 +361,7 @@ nav {
         height: 269px;
     }
 }
-@media (max-width: 779px) {
+@media (max-width: 767px) {
     .nav-list {
         display: none;
     }

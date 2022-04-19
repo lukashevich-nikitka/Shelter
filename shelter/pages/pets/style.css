@@ -212,7 +212,8 @@ nav {
     background-color: #F1CDB3;
 }
 .footer-container {
-    background-image: url(../../assets/images/footer-background.jpg);
+    background: url(../../assets/images/transparent-bg.png),
+    radial-gradient(86% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
     display: flex;
     flex-wrap: wrap;
     gap: 160px;
@@ -400,6 +401,7 @@ nav {
         transform: rotate(90deg) translate(-3px, -10px);
     }
     .logo {
+        z-index: 100;
         margin-left: 10px;
     }
     .burger {

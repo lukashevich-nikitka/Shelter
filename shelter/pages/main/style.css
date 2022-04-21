@@ -5,6 +5,9 @@ body {
     margin: 0px;
     background-color: rgb(212, 209, 209);
 }
+.delete-scroll {
+    overflow: hidden;
+}
 * {
     box-sizing: border-box;
 }
@@ -228,6 +231,77 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 90px;
+}
+.modale-window-close {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    max-height: 500px;
+    background-color: #FAFAFA;
+    height: 100%;
+    gap: 30px;
+}
+.modale-window-active {
+    z-index: 100;
+    display: flex;
+}
+.modale-image {
+    width: 500px;
+    height: 100%;
+}
+.modale-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Alike Angular', serif;
+    font-weight: 400;
+    margin-top: 50px;
+    color: black;
+    letter-spacing: 1px;
+}
+.modale-title {
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modale-under-title {
+    font-size: 20px;
+    line-height: 23px;
+}
+.modale-text {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    font-size: 15px;
+    line-height: 17px;
+}
+.modale-parameters {
+    font-size: 15px;
+    line-height: 16.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popup-out {
+    background-image: url(../../assets/icons/close-popup.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position :absolute;
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: -52px;
+    right: -52px;
+    cursor: pointer;
 }
 .friends-card-images {
     width: 270px;

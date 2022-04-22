@@ -28,13 +28,13 @@ const modaleParameters = document.querySelector('.modale-parameters');
 const closePopupButton = document.querySelector('.popup-out');
 const areaUnderActiveMenu = document.querySelector('.area-under-menu');
 const body = document.querySelector('body');
-const closePopupArray = [body, closePopupButton];
+const closePopupArray = [areaUnderActiveMenu, closePopupButton];
 
 /*popup*/
 
 function pushPopup(event) {
     closePopup.classList.toggle('modale-window-active');
-    body.classList.toggle('delete-scroll');
+    body.classList.add('delete-scroll');
     areaUnderActiveMenu.classList.add('area-under-menu-active');
     if (event.currentTarget.classList.contains('friends-card')) {
         let link = event.currentTarget.firstElementChild.nextElementSibling.textContent
@@ -56,9 +56,9 @@ function pushPopup(event) {
 function closeModaleWindow() {
     closePopup.classList.toggle('modale-window-active');
     areaUnderActiveMenu.classList.remove('area-under-menu-active');
+    body.classList.remove('delete-scroll');
 }
 
-closePopupButton.addEventListener('click', closeModaleWindow);
 popupCards.forEach((el) => el.addEventListener('click', pushPopup))
-
+closePopupArray.forEach((el) => el.addEventListener('click', closeModaleWindow))
 

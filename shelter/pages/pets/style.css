@@ -5,6 +5,9 @@ body {
     margin: 0px;
     background-color: rgb(212, 209, 209);
 }
+.delete-scroll {
+    overflow: hidden;
+}
 * {
     box-sizing: border-box;
 }
@@ -195,6 +198,12 @@ nav {
     padding-top: 10px;
     color: #292929;
     cursor: pointer;
+}
+.disabled {
+    border: solid #CDCDCD;
+    color: #CDCDCD;
+    background-color: transparent;
+    cursor: default;
 }
 .arrow-button {
     border: solid #F1CDB3;
@@ -415,7 +424,7 @@ nav {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-color: #292929;
+        background-color: #FFFFFF;
         width: 320px;
         right: -320px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -429,7 +438,7 @@ nav {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-color: #292929;
+        background-color: #FFFFFF;
         width: 320px;
         right: 0px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -449,7 +458,7 @@ nav {
     }
     .burger-nav-link {
         text-decoration: none;
-        color: #FAFAFA;
+        color: #545454;
         cursor: pointer;
     }
     .burger-nav-link:hover {
@@ -459,7 +468,7 @@ nav {
         text-underline-offset: 10px;
     }
     #active-burger-nav-link {
-        color: #FAFAFA;
+        color: #545454;
         text-decoration: underline;
         text-decoration-color: #F1CDB3;
         text-decoration-thickness: 3.5px;

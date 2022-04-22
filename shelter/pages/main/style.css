@@ -838,30 +838,6 @@ nav {
     .friends-card {
         margin: 0 auto;
     }
-    .modale-image {
-        display: none;
-    }
-    .modale-window-close {
-        width: 240px;
-        gap: 0px;
-        border-radius: 10px;
-        justify-content: center;
-    }
-    .modale-window-active {
-        text-align: center;
-    }
-    .modale-info {
-        gap: 22px;
-        margin-top: 10px;
-    }
-    .modale-text {
-        max-width: 220px;
-        text-align: left;
-    }
-    .modale-parameters {
-        margin-bottom: 10px;
-        text-align: left;
-    }
     .right-arrow {
         top: 603px;
         right: 68px;
@@ -1110,5 +1086,29 @@ nav {
         text-decoration-thickness: 3.5px;
         text-underline-offset: 10px;
         cursor: pointer;
+    }
+    .modale-image {
+        display: none;
+    }
+    .modale-window-close {
+        width: 240px;
+        gap: 0px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .modale-window-active {
+        text-align: center;
+    }
+    .modale-info {
+        gap: 22px;
+        margin-top: 10px;
+    }
+    .modale-text {
+        max-width: 220px;
+        text-align: left;
+    }
+    .modale-parameters {
+        margin-bottom: 10px;
+        text-align: left;
     }
 }

@@ -125,6 +125,80 @@ nav {
     gap: 40px;
     margin-left: 40px;
 }
+.modale-window-close {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: fit-content;
+    background-color: #FAFAFA;
+    gap: 30px;
+}
+.modale-window-active {
+    z-index: 100;
+    display: flex;
+}
+.modale-image {
+    max-width: 500px;
+    height: auto;
+}
+.modale-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Alike Angular', serif;
+    font-weight: 400;
+    margin-top: 50px;
+    color: black;
+    letter-spacing: 1px;
+}
+.modale-title {
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modale-under-title {
+    font-size: 20px;
+    line-height: 23px;
+}
+.modale-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 17px;
+}
+.modale-parameters {
+    font-size: 15px;
+    line-height: 16.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popup-out {
+    background-image: url(../../assets/icons/close-popup.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position :absolute;
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: -52px;
+    right: -52px;
+    cursor: pointer;
+}
+.popup-out:hover {
+    background-color: #FDDCC4;
+    border: none;
+}
 .friends-card-images {
     width: 270px;
     height: 270px;
@@ -177,18 +251,6 @@ nav {
     gap: 20px;
     margin-bottom: 100px;
 }
-.arrow-button-disabled {
-    border: solid #CDCDCD;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border-width: 2px;
-    text-align: center;
-    padding-top: 10px;
-    color: #CDCDCD;
-    letter-spacing: 2px;
-    cursor: default;
-}
 .arrow-button-active {
     background-color: #F1CDB3;
     width: 52px;
@@ -203,9 +265,16 @@ nav {
     border: solid #CDCDCD;
     color: #CDCDCD;
     background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
     cursor: default;
 }
-.arrow-button {
+.right-arrow-button {
     border: solid #F1CDB3;
     width: 52px;
     height: 52px;
@@ -217,8 +286,64 @@ nav {
     color: #292929;
     cursor: pointer;
 }
-.arrow-button:hover {
+.right-arrow-button:hover {
     background-color: #F1CDB3;
+}
+.left-arrow-button {
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: #292929;
+    cursor: pointer;
+}
+.left-arrow-button:hover {
+    background-color: #F1CDB3;
+}
+.double-right-arrow-button {
+    border: solid #F1CDB3;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: #292929;
+    cursor: pointer;
+}
+.double-right-arrow-button:hover {
+    background-color: #F1CDB3;
+}
+.double-left-arrow-button {
+    border: solid #CDCDCD;
+    color: #CDCDCD;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.left-arrow-button {
+    border: solid #CDCDCD;
+    color: #CDCDCD;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    cursor: default;
 }
 .footer-container {
     background: url(../../assets/images/transparent-bg.png),

@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger');
 const burgerList = document.querySelector('.close-burger-menu');
-const areaUnderActiveMenu = document.querySelector('.area-under-menu');
+const areaUnderActiveMenu = document.querySelector('.area-under-menu-for-burger');
 const body = document.querySelector('body');
 const closeItemsArray = [burgerList, burger, areaUnderActiveMenu];
 

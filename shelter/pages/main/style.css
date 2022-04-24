@@ -29,6 +29,11 @@ body {
     height: 100vh;
     display: none;
 }
+.area-under-menu-for-burger {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
 .area-under-menu-active {
     position: fixed;
     cursor: pointer;

@@ -11,6 +11,23 @@ const doubleLeftArrow = document.querySelector('.double-left-arrow-button');
 let stack = new Set;
 let arrayStacks = [];
 let page = 1;
+let lastPage;
+let countOfImages;
+
+function maxPage() {
+    if (screen.width < 1280 && screen.width > 767) {
+        countOfImages = 6;
+        lastPage = 8;
+    }
+    else if (screen.width > 1279) {
+        countOfImages = 8;
+        lastPage = 6;
+    }
+    else if (screen.width < 768) {
+        countOfImages = 3;
+        lastPage = 16;
+    }
+}
 
 function pushPagination() {
     if (stack.size !== info.length) {
@@ -33,7 +50,7 @@ function continuePagination() {
 }
 
 function arrowsNavigation() {
-    if (page === 6) {
+    if (page === lastPage) {
         rightArrow.removeEventListener('click', moveRight);
         rightArrow.classList.remove('right-arrow-button')
         rightArrow.classList.add('disabled');
@@ -76,35 +93,46 @@ function arrowsNavigation() {
         doubleLeftArrow.removeEventListener('click', moveDobleLeft);
     }
 }
+
+maxPage()
+
 function moveRight() {
     activeButton.textContent = ++page;
-    let currentElements = arrayStacks.slice(page * 8 - 8, page * 8);
-    friendsNamesCollection.forEach((name, index) => name.textContent = currentElements[index].name);
-    friendsImagesCollection.forEach((image, index) => image.src = currentElements[index].img);
+    let currentElements = arrayStacks.slice(page * countOfImages - countOfImages, page * countOfImages);
+    let friendsNamesArray = [...friendsNamesCollection].slice(0, countOfImages);
+    let friendsImagesArray = [...friendsImagesCollection].slice(0, countOfImages);
+    friendsNamesArray.forEach((name, index) => name.textContent = currentElements[index].name);
+    friendsImagesArray.forEach((image, index) => image.src = currentElements[index].img);
     arrowsNavigation();
 }
 
 function moveLeft() {
     activeButton.textContent = --page;
-    let currentElements = arrayStacks.slice(page * 8 - 8, page * 8);
-    friendsNamesCollection.forEach((name, index) => name.textContent = currentElements[index].name);
-    friendsImagesCollection.forEach((image, index) => image.src = currentElements[index].img);
+    let currentElements = arrayStacks.slice(page * countOfImages - countOfImages, page * countOfImages);
+    let friendsNamesArray = [...friendsNamesCollection].slice(0, countOfImages);
+    let friendsImagesArray = [...friendsImagesCollection].slice(0, countOfImages);
+    friendsNamesArray.forEach((name, index) => name.textContent = currentElements[index].name);
+    friendsImagesArray.forEach((image, index) => image.src = currentElements[index].img);
     arrowsNavigation();
 }
 
 function moveDoubleRight() {
-    activeButton.textContent = page = 6;
-    let currentElements = arrayStacks.slice(page * 8 - 8, page * 8);
-    friendsNamesCollection.forEach((name, index) => name.textContent = currentElements[index].name);
-    friendsImagesCollection.forEach((image, index) => image.src = currentElements[index].img);
+    activeButton.textContent = page = lastPage;
+    let currentElements = arrayStacks.slice(page * countOfImages - countOfImages, page * countOfImages);
+    let friendsNamesArray = [...friendsNamesCollection].slice(0, countOfImages);
+    let friendsImagesArray = [...friendsImagesCollection].slice(0, countOfImages);
+    friendsNamesArray.forEach((name, index) => name.textContent = currentElements[index].name);
+    friendsImagesArray.forEach((image, index) => image.src = currentElements[index].img);
     arrowsNavigation();
 }
 
 function moveDobleLeft() {
     activeButton.textContent = page = 1;
-    let currentElements = arrayStacks.slice(page * 8 - 8, page * 8);
-    friendsNamesCollection.forEach((name, index) => name.textContent = currentElements[index].name);
-    friendsImagesCollection.forEach((image, index) => image.src = currentElements[index].img);
+    let currentElements = arrayStacks.slice(page * countOfImages - countOfImages, page * countOfImages);
+    let friendsNamesArray = [...friendsNamesCollection].slice(0, countOfImages);
+    let friendsImagesArray = [...friendsImagesCollection].slice(0, countOfImages);
+    friendsNamesArray.forEach((name, index) => name.textContent = currentElements[index].name);
+    friendsImagesArray.forEach((image, index) => image.src = currentElements[index].img);
     arrowsNavigation();
 }
 
